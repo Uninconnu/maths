@@ -1,4 +1,3 @@
-Voici un exemple de README pour ton dépôt GitHub consacré à ton cours de mathématiques en terminale :
 
 ---
 
