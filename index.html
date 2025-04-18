@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async 
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+  
+  <title>Cours Tale Maths Spé</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #29506f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .medals {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .medals div {
+      margin: 0 10px;
+    }
+
+    a {
+      color: #29506f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .children {
+      margin-top: 30px;
+    }
+
+    .pearl {
+      background-color: #e9f4f9;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .pearl:hover {
+      background-color: #d0e6f1;
+      transform: scale(1.05);
+    }
+
+    .pearl input[type="checkbox"] {
+      margin-left: 10px;
+    }
+
+    .summary {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+    }
+
+    .summary h3 {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+      color: #29506f;
+    }
+
+    .summary p {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* Animation pour les titres */
+    .tree-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Styles pour les boutons de navigation */
+    .btn {
+      background-color: #29506f;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1f3c50;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cours Tale Maths Spé</h1>
+  <div class="tree">
+    <p>Voici le programme de terminale (il reste quelque chapitres)</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="tree">
+    <h2 class="tree-title">Liste des Chapitres</h2>
+    <div class="children">
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1Tvo4uPS1M_-8yab8xj21xwPUhfghpZln/preview">Tspé Chapitre 1 : Les suites</a></span>
+        <input type="checkbox" id="chap1">
+      </div>
+
+      <!-- Résumé du Chapitre 1 -->
+      <div class="summary">
+        <h3>Chapitre 1 : Les suites</h3>
+        <p><strong>Le principe :</strong> Une suite est une liste ordonnée d'éléments. On distingue plusieurs types de suites : arithmétiques, géométriques, récurrentes, etc.</p>
+        <p><strong>L'objectif :</strong> Analyser le comportement des suites, déterminer leur limite, comprendre les suites récurrentes et utiliser des outils comme le principe de récurrence et le théorème du point fixe.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Une suite arithmétique a une différence constante entre deux termes successifs.</li>
+            <li>Une suite géométrique a un rapport constant entre deux termes successifs.</li>
+            <li>Le théorème du point fixe permet de trouver une valeur fixe dans une suite récurrente, et d'étudier sa convergence.</li>
+            <li>Le principe de récurrence est une méthode rigoureuse pour démontrer des propriétés sur les suites définies par récurrence.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1-BgGHIeCupZAzI1kD8xYZ3_3JSm5RSfb/preview" target="_blank">Tspé Chapitre 2 : Loi Binomiale</a></span>
+        <input type="checkbox" id="chap2">
+      </div>
+      <!-- Résumé du Chapitre 2 -->
+      <div class="summary">
+        <h3>Chapitre 2 : la loi binomiale</h3>
+        <p><strong>Le principe :</strong></p>
+        <p>La loi binomiale modélise le nombre de succès obtenus dans une série d’épreuves indépendantes, chacune ayant deux issues possibles : le succès ou l’échec. Chaque épreuve suit une probabilité fixe de succès. Le principe de la loi binomiale repose sur plusieurs éléments :</p>
+        <ul>
+            <li><strong>Indépendance des épreuves :</strong> Les résultats des épreuves n'affectent pas les autres.</li>
+            <li><strong>Nombre fixe d’épreuves :</strong> Le nombre d’épreuves (noté n) est déterminé à l’avance.</li>
+            <li><strong>Probabilité constante de succès :</strong> À chaque épreuve, la probabilité de succès est fixe et notée \( p \), tandis que la probabilité d’échec est \( 1 - p \).</li>
+        </ul>
+        
+        <p><strong>Objectif de la loi binomiale :</strong></p>
+        <p>L’objectif de la loi binomiale est de déterminer la probabilité de réaliser un certain nombre de succès dans une série d’épreuves indépendantes. Par exemple, si on réalise \( n \) épreuves indépendantes, la loi binomiale permet de calculer la probabilité d’obtenir exactement \( k \) succès parmi ces \( n \) épreuves.</p>
+        
+        <p><strong>Propriétés de la loi binomiale :</strong></p>
+        <p>Voici les principales propriétés de la loi binomiale, associées à une variable aléatoire \( X \) qui suit une loi binomiale de paramètres \( n \) et \( p \) :</p>
+        <ul>
+            <li><strong>Espérance \( E(X) \) :</strong> L’espérance de \( X \), qui donne la moyenne attendue du nombre de succès, est donnée par :
+                \[
+                E(X) = n \times p
+                \]
+            </li>
+            <li><strong>Variance \( V(X) \) :</strong> La variance de \( X \), qui mesure la dispersion des résultats autour de l’espérance, est donnée par :
+                \[
+                V(X) = n \times p \times (1 - p)
+                \]
+            </li>
+            <li><strong>Écart-type \( \sigma(X) \) :</strong> L’écart-type de \( X \) est la racine carrée de la variance :
+                \[
+                \sigma(X) = \sqrt{n \times p \times (1 - p)}
+                \]
+            </li>
+        </ul>
+        
+        <p><strong>Définition de la loi binomiale :</strong></strong></p>
+        <p>Soit \( X \) une variable aléatoire associée à un schéma de Bernoulli répété \( n \) fois, avec une probabilité \( p \) de succès pour chaque épreuve. \( X \) suit une loi binomiale de paramètres \( n \) et \( p \), notée \( X \sim B(n, p) \). La fonction de probabilité associée à \( X \) est donnée par :</p>
+        \[
+        P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
+        \]
+        <p>où \( \binom{n}{k} \) est le coefficient binomial, représentant le nombre de façons de choisir \( k \) succès parmi \( n \) épreuves.</p>
+      </div>        
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1aEapx0fi8YDwQFP3jicMmwIhWK3XIhAb/preview" target="_blank">Tspé Chapitre 3 : Comparaison et Limites des Suites</a></span>
+        <input type="checkbox" id="chap3">
+      </div>
+      <!-- Résumé du Chapitre 3 -->
+      <div class="summary">
+        <h3>Chapitre 3 : Comparaison et Limites des Suites</h3>
+        
+        <p><strong>Principe :</strong></p>
+        <p>L’étude des limites des suites permet de comprendre leur comportement lorsque l'indice \( n \) devient très grand (tend vers l'infini). Cela permet de déterminer si une suite converge (tend vers une valeur finie) ou diverge (tend vers \( +\infty \), \( -\infty \), ou ne tend vers rien). Les théorèmes de comparaison sont utilisés pour prouver la convergence ou la divergence des suites en les comparant à des suites dont les comportements sont déjà connus.</p>
+      
+        <p><strong>Objectif :</strong></p>
+        <p>Le but de ce chapitre est de déterminer les limites des suites et d’utiliser les théorèmes de comparaison pour démontrer la convergence ou la divergence des suites sans avoir à les calculer directement.</p>
+      
+        <p><strong>Propriétés importantes :</strong></p>
+        
+        <p><strong>Les limites des suites :</strong></p>
+        <p>Une suite \( (u_n) \) est une fonction définie sur \( \mathbb{N} \), l’ensemble des entiers naturels. On parle de la limite de la suite lorsque l'on cherche à déterminer la valeur vers laquelle les termes de la suite tendent lorsque \( n \) devient très grand (c'est-à-dire lorsque \( n \to +\infty \)). Si une suite converge vers une valeur \( L \), on écrit :
+          \[
+          \lim_{n \to +\infty} u_n = L
+          \]
+          Cela signifie que les termes de la suite \( u_n \) se rapprochent de \( L \) à mesure que \( n \) augmente. Si la suite ne se rapproche pas d’une valeur finie, elle diverge.</p>
+      
+        <p><strong>Les suites convergentes :</strong></p>
+        <p>Une suite \( (u_n) \) est dite convergente si, pour tout \( \epsilon > 0 \), il existe un entier \( N \) tel que pour tout \( n > N \), la différence entre \( u_n \) et la limite \( L \) est inférieure à \( \epsilon \), c'est-à-dire :
+          \[
+          |u_n - L| < \epsilon \quad \text{pour tout} \quad n > N
+          \]
+          Cela signifie que plus \( n \) devient grand, plus \( u_n \) est proche de \( L \). En revanche, si cette condition n'est pas remplie, la suite est dite divergente.</p>
+        
+        <p><strong>Théorème de comparaison pour les suites :</strong></p>
+        <p>Le théorème de comparaison est un outil clé pour démontrer la convergence d’une suite sans avoir à calculer sa limite directement. Il repose sur l’idée de comparer une suite à une autre dont la limite est déjà connue. Ce théorème stipule que si pour deux suites \( (v_n) \) et \( (w_n) \), on a :
+          \[
+          v_n \leq u_n \leq w_n \quad \text{pour tout} \quad n
+          \]
+          et si \( \lim_{n \to +\infty} v_n = \lim_{n \to +\infty} w_n = L \), alors la suite \( (u_n) \) converge également vers \( L \). Ce théorème permet donc de prouver la convergence d'une suite par un raisonnement indirect, en la comparant à des suites plus simples.</p>
+      
+        <p><strong>Exemple :</strong></p>
+        <p>Considérons la suite \( u_n = \frac{1}{n} \). Comparons-la aux suites \( v_n = 0 \) et \( w_n = \frac{2}{n} \), qui sont plus simples. Nous savons que :
+          \[
+          0 \leq \frac{1}{n} \leq \frac{2}{n}
+          \]
+          et que les suites \( v_n = 0 \) et \( w_n = \frac{2}{n} \) convergent vers 0 lorsque \( n \to +\infty \). Par le théorème de comparaison, on peut conclure que :
+          \[
+          \lim_{n \to +\infty} \frac{1}{n} = 0
+          \]
+          Cette méthode permet de démontrer que la suite \( u_n \) converge vers 0 sans avoir à la calculer directement.</p>
+      
+        <p><strong>Théorème des gendarmes :</strong></p>
+        <p>Le théorème des gendarmes est une forme particulière du théorème de comparaison. Il permet de démontrer la limite d’une suite en utilisant l’encadrement de la suite par deux autres suites dont les limites sont connues. Si une suite \( (u_n) \) est encadrée par deux suites \( (v_n) \) et \( (w_n) \) telles que \( v_n \leq u_n \leq w_n \) pour tout \( n \), et que \( \lim_{n \to +\infty} v_n = \lim_{n \to +\infty} w_n = L \), alors \( \lim_{n \to +\infty} u_n = L \). C’est un outil puissant pour prouver la convergence des suites complexes.</p>
+      
+        <p><strong>Exemple :</strong></p>
+        <p>Considérons la suite \( u_n = \frac{\sin(n)}{n} \). On sait que pour tout \( n \), on a :
+          \[
+          -\frac{1}{n} \leq \frac{\sin(n)}{n} \leq \frac{1}{n}
+          \]
+          Or, les suites \( -\frac{1}{n} \) et \( \frac{1}{n} \) tendent toutes deux vers 0 lorsque \( n \to +\infty \). Par le théorème des gendarmes, on peut conclure que :
+          \[
+          \lim_{n \to +\infty} \frac{\sin(n)}{n} = 0
+          \]
+          Cela montre comment on peut utiliser l'encadrement des suites pour démontrer une limite.</p>
+      
+        <p><strong>Les suites divergentes :</strong></p>
+        <p>Une suite est dite divergente si elle ne tend vers aucune valeur finie. Par exemple, la suite \( u_n = n \) diverge vers \( +\infty \). Cela signifie que plus \( n \) devient grand, plus les termes de la suite deviennent grands sans se stabiliser.</p>
+        
+        <p><strong>Conclusion :</strong></p>
+        <p>Les limites des suites sont des concepts fondamentaux en analyse, permettant de comprendre le comportement à long terme des suites. Le théorème de comparaison et le théorème des gendarmes sont des outils puissants pour démontrer la convergence ou la divergence des suites, même lorsque le calcul direct de la limite est complexe. Une bonne maîtrise de ces outils permet de résoudre une large variété de problèmes mathématiques, notamment dans les domaines des séries, des équations différentielles et des intégrales.</p>
+      </div>
+      
+      
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1KGYAbLlcWePf8EHgbU0-mFjVc1EB0NPE/preview" target="_blank">Tspé Chapitre 4 : Vecteurs, droites et plans de l'espace</a></span>
+        <input type="checkbox" id="chap4">
+      </div>
+      <!-- Résumé du Chapitre 4 -->
+      <div class="summary">
+        <h3>Chapitre 4 : Vecteurs, droites et plans de l'espace</h3>
+        <p><strong>Principe :</strong></p>
+        <p>Le chapitre "Vecteurs, droites et plans de l'espace" permet de traiter des objets géométriques en 3 dimensions : les vecteurs, les droites et les plans. L'objectif est d'utiliser les outils algébriques pour étudier la position et l'orientation de ces objets dans l'espace, et de résoudre des problèmes géométriques à l'aide des coordonnées et des propriétés des vecteurs.</p>
+      
+        <p><strong>Objectif :</strong></p>
+        <p>Ce chapitre permet de maîtriser les concepts des vecteurs dans l’espace, de déterminer les équations des droites et des plans dans l’espace, et d’étudier les relations entre ces objets géométriques. L'objectif est de comprendre et d'appliquer les notions de produit scalaire, de projection, de distance entre un point et un plan ou une droite, ainsi que de résoudre des systèmes d'équations pour décrire des objets géométriques en 3D.</p>
+      
+        <p><strong>Les Vecteurs :</strong></p>
+        <p>Un vecteur dans l’espace est un objet qui permet de décrire une direction et une norme. Un vecteur \( \vec{AB} \) est défini par deux points \( A(x_1, y_1, z_1) \) et \( B(x_2, y_2, z_2) \) dans l'espace. Ses coordonnées sont données par :
+          \[
+          \vec{AB} = (x_2 - x_1, y_2 - y_1, z_2 - z_1)
+          \]
+          Le vecteur nul \( \vec{0} \) est défini comme étant le vecteur dont les coordonnées sont \( (0, 0, 0) \).</p>
+      
+        <p><strong>Le Produit Scalaire :</strong></p>
+        <p>Le produit scalaire entre deux vecteurs \( \vec{u} = (u_1, u_2, u_3) \) et \( \vec{v} = (v_1, v_2, v_3) \) est défini par :
+          \[
+          \vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 + u_3v_3
+          \]
+          Il permet de calculer l'angle entre deux vecteurs et est très utile pour déterminer si deux vecteurs sont orthogonaux, car si \( \vec{u} \cdot \vec{v} = 0 \), alors les vecteurs sont perpendiculaires.</p>
+      
+        <p><strong>Les Droites de l'Espace :</strong></p>
+        <p>Une droite dans l'espace peut être représentée par une équation paramétrique de la forme :
+          \[
+          \vec{r}(t) = \vec{A} + t \vec{v}
+          \]
+          où \( \vec{A} \) est un point de la droite et \( \vec{v} \) est un vecteur directeur. Le paramètre \( t \) permet de parcourir tous les points de la droite. Cette équation paramétrique est très utile pour étudier la position de la droite dans l'espace et pour calculer des intersections avec d'autres objets géométriques comme les plans.</p>
+      
+        <p><strong>Les Plans de l'Espace :</strong></p>
+        <p>Un plan dans l'espace peut être défini par une équation cartésienne de la forme :
+          \[
+          ax + by + cz = d
+          \]
+          où \( (a, b, c) \) est un vecteur normal au plan. Cette équation représente un plan qui passe par l'origine si \( d = 0 \), et elle permet de déterminer l'orientation du plan ainsi que son intersection avec les axes.</p>
+      
+        <p><strong>Distance d'un Point à un Plan :</strong></p>
+        <p>La distance \( d \) entre un point \( P(x_1, y_1, z_1) \) et un plan \( ax + by + cz = d \) est donnée par la formule :
+          \[
+          d = \frac{|ax_1 + by_1 + cz_1 - d|}{\sqrt{a^2 + b^2 + c^2}}
+          \]
+          Cette formule permet de calculer la distance perpendiculaire du point au plan, ce qui est essentiel pour l'étude de la géométrie dans l'espace.</p>
+      
+        <p><strong>Intersection d'une Droite et d'un Plan :</strong></p>
+        <p>Pour déterminer l'intersection d'une droite et d'un plan, on résout le système d'équations suivant :
+          - L'équation paramétrique de la droite : \( \vec{r}(t) = \vec{A} + t \vec{v} \)
+          - L'équation cartésienne du plan : \( ax + by + cz = d \)
+      
+          En remplaçant les coordonnées de la droite dans l'équation du plan, on obtient une équation en \( t \). La valeur de \( t \) ainsi obtenue permet de déterminer le point d'intersection.</p>
+      
+        <p><strong>Exemple :</strong></p>
+        <p>Soit une droite \( \vec{r}(t) = (1, 2, 3) + t(2, 1, -1) \) et un plan \( 2x - y + z = 4 \). Pour trouver l'intersection, on remplace les coordonnées de la droite dans l'équation du plan :
+          \[
+          2(1 + 2t) - (2 + t) + (3 - t) = 4
+          \]
+          Ce qui donne :
+          \[
+          2 + 4t - 2 - t + 3 - t = 4
+          \]
+          En simplifiant, on obtient \( 2t = 1 \), donc \( t = \frac{1}{2} \). En remplaçant cette valeur de \( t \) dans l'équation de la droite, on obtient le point d'intersection : \( (2, 2.5, 2.5) \).</p>
+      
+        <p><strong>Conclusion :</strong></p>
+        <p>Le chapitre sur les vecteurs, droites et plans dans l'espace permet de comprendre et d'appliquer les concepts fondamentaux de la géométrie dans l'espace. Grâce aux vecteurs et à l'utilisation des équations paramétriques et cartésiennes, on peut étudier de manière précise la position des objets géométriques et résoudre des problèmes d'intersections, de distances et de projections.</p>
+      </div>
+
+
+      <div class="pearl">
+  <span><a href="https://drive.google.com/file/d/1k6K7lLLHQV7c6UC-35tp0AaVHGc2QVXA/preview" target="_blank">Tspé Chapitre 5 : Limites de fonctions</a></span>
+  <input type="checkbox" id="chap5">
+</div>
+
+<div class="summary">
+  <h3>Chapitre 5 : Limites de fonctions</h3>
+
+  <p><strong>Définition :</strong> Soit une fonction \( f \) définie sur un intervalle. On dit que \( f \) admet une limite \( l \) en \( a \) si :</p>
+  <p style="text-align: center;">
+    \( \lim\limits_{x \to a} f(x) = l \)
+  </p>
+  <p>cela signifie que lorsque \( x \) se rapproche de \( a \), \( f(x) \) se rapproche de \( l \).</p>
+
+  <p><strong>Limites à droite et à gauche :</strong></p>
+  <ul>
+    <li>Limite à droite : \( \lim\limits_{x \to a^+} f(x) \)</li>
+    <li>Limite à gauche : \( \lim\limits_{x \to a^-} f(x) \)</li>
+  </ul>
+
+  <p><strong>Limites à l’infini :</strong> Il s’agit d’étudier le comportement de \( f(x) \) quand \( x \to +\infty \) ou \( x \to -\infty \).</p>
+  <p>Exemple : \( \lim\limits_{x \to +\infty} \frac{1}{x} = 0 \)</p>
+
+  <p><strong>Propriétés algébriques :</strong> Si \( \lim\limits_{x \to a} f(x) = l \) et \( \lim\limits_{x \to a} g(x) = m \), alors :</p>
+  <ul>
+    <li>\( \lim\limits_{x \to a} [f(x) + g(x)] = l + m \)</li>
+    <li>\( \lim\limits_{x \to a} [f(x) \cdot g(x)] = l \cdot m \)</li>
+    <li>Si \( m \neq 0 \), alors \( \lim\limits_{x \to a} \frac{f(x)}{g(x)} = \frac{l}{m} \)</li>
+  </ul>
+
+  <p><strong>Formes indéterminées :</strong> Les formes indéterminées apparaissent quand le calcul direct donne une expression comme :</p>
+  <ul>
+    <li>\( \frac{0}{0} \), \( \frac{\infty}{\infty} \), \( \infty - \infty \), \( 0 \cdot \infty \), \( \infty^0 \), etc.</li>
+  </ul>
+  <p>Pour résoudre cela, on utilise des techniques : factorisation, mise au même dénominateur, conjugaison, changement de variable, ou encore la règle de l’Hôpital.</p>
+
+  <p><strong>Limites remarquables :</strong></p>
+  <ul>
+    <li>\( \lim\limits_{x \to 0} \frac{\sin(x)}{x} = 1 \)</li>
+    <li>\( \lim\limits_{x \to 0} \frac{1 - \cos(x)}{x^2} = \frac{1}{2} \)</li>
+    <li>\( \lim\limits_{x \to +\infty} \frac{1}{x^n} = 0 \) pour tout \( n > 0 \)</li>
+    <li>\( \lim\limits_{x \to +\infty} \ln(x) = +\infty \)</li>
+  </ul>
+
+  <p><strong>Théorème des croissances comparées :</strong></p>
+  <p>Ce théorème permet de comparer les vitesses de croissance de fonctions quand \( x \to +\infty \) :</p>
+  <ul>
+    <li>\( \ln(x) \ll x^a \ll e^x \ll x^x \), pour tout réel \( a > 0 \)</li>
+  </ul>
+  <p>Autrement dit :</p>
+  <ul>
+    <li>\( \lim\limits_{x \to +\infty} \frac{\ln(x)}{x^a} = 0 \)</li>
+    <li>\( \lim\limits_{x \to +\infty} \frac{x^a}{e^x} = 0 \)</li>
+    <li>\( \lim\limits_{x \to +\infty} \frac{e^x}{x^x} = 0 \)</li>
+  </ul>
+  <p>Ce théorème est très utile pour déterminer des limites de quotients asymptotiques.</p>
+
+  <p><strong>Exemple classique :</strong></p>
+  <p>\( \lim\limits_{x \to +\infty} \frac{\ln(x)}{x} = 0 \), car \( \ln(x) \) croit moins vite que \( x \)</p>
+
+  <p><strong>Exercice type :</strong> Montrer que \( \lim\limits_{x \to +\infty} \frac{x^3 + 2x}{e^x} = 0 \)</p>
+  <p>On utilise le fait que \( x^3 \ll e^x \) donc le numérateur est négligeable devant le dénominateur.</p>
+
+  <p><strong>Conclusion :</strong> Les limites permettent de mieux comprendre le comportement d’une fonction près d’un point ou à l’infini. Maîtriser les techniques de calcul, les théorèmes comme celui des croissances comparées et les limites remarquables est indispensable pour aborder les suites, la continuité, les asymptotes et les études de fonctions plus complexes.</p>
+</div>
+
+      
+
+      
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/19j_LD1GG26RwHN7IBVCU_7HvYa1LGhF0/preview" target="_blank">Tspé Chapitre 6 : Fonction logarithme népérien 1</a></span>
+        <input type="checkbox" id="chap6">
+      </div>
+      
+      <div class="summary">
+        <h3>Chapitre 6 : Fonction logarithme népérien 1</h3>
+        <p><strong>Le principe :</strong> Le logarithme népérien est la fonction inverse de l'exponentielle. Elle est utilisée pour résoudre des équations impliquant des puissances de \( e \) et des croissances exponentielles.</p>
+        <p><strong>L'objectif :</strong> Maîtriser les propriétés de la fonction logarithme népérien, comprendre sa dérivée et savoir l'utiliser pour résoudre des équations différentielles simples.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>La fonction \( \ln(x) \) est croissante et définie pour \( x > 0 \).</li>
+            <li>La dérivée de \( \ln(x) \) est \( \frac{1}{x} \), ce qui en fait un outil puissant pour l'intégration et la résolution d'équations différentielles.</li>
+            <li>Le logarithme népérien est utilisé pour modéliser des phénomènes de croissance et de décroissance exponentielle.</li>
+          </ul>
+        </p>
+      </div>
+      
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1Q8uDTZFsYKseVgym6fjOWErks5xDFZKy/preview" target="_blank">Tspé Chapitre 7 : Convexité et Concavité</a></span>
+        <input type="checkbox" id="chap7">
+      </div>
+      <!-- Résumé du Chapitre 7 -->
+      <div class="summary">
+        <h3>Chapitre 7 : Convexité et Concavité</h3>
+        <p><strong>Propriétés :</strong></p>
+        <ul>
+          <li>La fonction carré \( f(x) = x^2 \) est convexe sur \( \mathbb{R} \).</li>
+          <li>La fonction cube \( f(x) = x^3 \) est concave sur \( ]-\infty; 0] \) et convexe sur \( [0; +\infty[ \).</li>
+          <li>La fonction inverse \( f(x) = \frac{1}{x} \) est concave sur \( ]0; +\infty[ \) et convexe sur \( ]-\infty; 0[ \).</li>
+          <li>La fonction racine carrée \( f(x) = \sqrt{x} \) est concave sur \( ]-\infty; 0[ \) et convexe sur \( ]0; +\infty[ \).</li>
+        </ul>
+      
+        <p><strong>Définition :</strong> Soit une fonction \( f \) définie et deux fois dérivable sur un intervalle \( I \). Dire que la fonction \( f \) est convexe sur \( I \) revient à dire que sa dérivée \( f' \) est croissante sur \( I \), soit :</p>
+        <p style="text-align: center;">  
+          \[
+          f''(x) \geq 0 \quad \text{(convexité)}
+          \]
+        </p>
+        <p>Dire que la fonction \( f \) est concave sur \( I \) revient à dire que sa dérivée \( f' \) est décroissante sur \( I \), soit :</p>
+        <p style="text-align: center;">  
+          \[
+          f''(x) \leq 0 \quad \text{(concavité)}
+          \]
+        </p>
+      
+        <p><strong>Propriété du point d'inflexion :</strong> Au point d'inflexion, la fonction change de convexité. Cela signifie que la courbe passe d'une concavité à l'autre (de concave à convexe ou vice versa) en ce point. Le point d'inflexion correspond à un point où la dérivée seconde est nulle, \( f''(x) = 0 \), mais il faut également vérifier que la concavité change de part et d'autre de ce point.</p>
+      
+        <p><strong>Étudier la convexité pour résoudre un problème :</strong></p>
+        <p>Lorsque l'on cherche à minimiser une fonction \( f \), la convexité de la fonction nous garantit que si \( f \) est convexe, tout minimum local est également un minimum global. L’étude de la concavité permet quant à elle de prouver l'existence de maxima locaux et globaux.</p>
+        <p>Pour résoudre un problème de minimisation, on peut procéder de la manière suivante :</p>
+        <ol>
+          <li>Calculer la dérivée seconde \( f''(x) \).</li>
+          <li>Vérifier le signe de \( f''(x) \) dans l'intervalle considéré.</li>
+          <li>Si \( f''(x) \geq 0 \), la fonction est convexe et toute solution de l’équation \( f'(x) = 0 \) est un minimum local (et global si la fonction est définie sur un intervalle fermé).</li>
+          <li>Si \( f''(x) \leq 0 \), la fonction est concave et toute solution de \( f'(x) = 0 \) est un maximum local.</li>
+        </ol>
+      </div>
+      
+      
+            
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1lVVXevnr_aW5gL3ieQVtZTjYP4frfeYZ/preview" target="_blank">Tspé Chapitre 8 : Dénombrement</a></span>
+        <input type="checkbox" id="chap8">
+      </div>
+      <!-- Résumé du Chapitre 8 -->
+      <div class="summary">
+        <h3>Chapitre 8 : Dénombrement</h3>
+        <p><strong>Le principe :</strong> Le dénombrement est une branche des mathématiques qui étudie le nombre de façons de choisir ou d'organiser des objets, souvent en combinatoire.</p>
+        <p><strong>L'objectif :</strong> Savoir utiliser les principes du dénombrement pour résoudre des problèmes de combinaison et de permutation, et comprendre les applications dans des contextes pratiques.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Les principes de multiplication et d'addition permettent de compter les possibilités de différentes façons selon les problèmes.</li>
+            <li>Les coefficients binomiaux, qui sont utilisés pour déterminer le nombre de façons de choisir des éléments dans un ensemble.</li>
+            <li>Les permutations et les combinaisons sont les deux principaux outils pour résoudre des problèmes de dénombrement.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1CJi98Azkp6r7vfXQDsTf_LcvIYODylm_/preview" target="_blank">Tspé Chapitre 9 : Convexité</a></span>
+        <input type="checkbox" id="chap9">
+      </div>
+      <!-- Résumé du Chapitre 9 -->
+      <div class="summary">
+        <h3>Chapitre 9 : Convexité</h3>
+        <p><strong>Le principe :</strong> La convexité d'une fonction permet de déterminer sa courbure, et d'analyser ses propriétés géométriques comme les points d'inflexion.</p>
+        <p><strong>L'objectif :</strong> Savoir identifier les fonctions convexes et concaves à partir de leur dérivée seconde et comprendre leur impact sur les graphiques des fonctions.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Une fonction est convexe sur un intervalle si sa dérivée seconde est positive sur cet intervalle.</li>
+            <li>Les fonctions convexes ont une courbure vers le haut, tandis que les fonctions concaves ont une courbure vers le bas.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1PmOzsBKUOwTPtO6VkK0gtC_7pLovMMWc/preview" target="_blank">Tspé Chapitre 10 : Fonction logarithme népérien 2</a></span>
+        <input type="checkbox" id="chap10">
+      </div>
+      <!-- Résumé du Chapitre 10 -->
+      <div class="summary">
+        <h3>Chapitre 10 : Fonction logarithme népérien 2</h3>
+        <p><strong>Le principe :</strong> Ce chapitre approfondit l'utilisation du logarithme népérien dans le cadre de la résolution d'équations différentielles et de modélisation de phénomènes exponentiels.</p>
+        <p><strong>L'objectif :</strong> Appliquer les connaissances sur les logarithmes pour résoudre des équations différentielles, et comprendre leur rôle dans les processus de croissance et de décroissance.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Les fonctions exponentielles et logarithmiques sont liées par des relations réciproques, ce qui permet de les utiliser pour simplifier certains calculs complexes.</li>
+            <li>Les logarithmes sont essentiels dans l'analyse des systèmes dynamiques et des équations différentielles linéaires.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1MTOPiGm0Yv6k6O8lerdNwDwFabdDP2FQ/preview" target="_blank">Tspé Chapitre 11 : Suites et récurrence</a></span>
+        <input type="checkbox" id="chap11">
+      </div>
+      <!-- Résumé du Chapitre 11 -->
+      <div class="summary">
+        <h3>Chapitre 11 : Suites et récurrence</h3>
+        <p><strong>Le principe :</strong> Les suites sont des fonctions définies sur les entiers et peuvent être étudiées à l'aide de la récurrence, un principe qui permet de prouver des propriétés sur les suites en vérifiant deux étapes fondamentales : l'initialisation et l'hérédité.</p>
+        <p><strong>L'objectif :</strong> Apprendre à résoudre des problèmes impliquant des suites récurrentes, en utilisant les propriétés des suites arithmétiques et géométriques, et maîtriser le principe de récurrence pour prouver des théorèmes.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Le principe de récurrence permet de démontrer que, sous certaines hypothèses, une propriété est vraie pour tous les entiers naturels.</li>
+            <li>Les suites arithmétiques et géométriques sont les exemples classiques de suites dont on peut analyser les propriétés à l’aide de récurrence.</li>
+            <li>Le théorème du point fixe et les suites définies par récurrence peuvent être utilisés pour étudier les limites des suites et les comportements asymptotiques.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1U0PhKRz3t8lyErssuzuiI8Z6rbPwJk0V/preview" target="_blank">Tspé Chapitre 12 : Equations différentielles</a></span>
+        <input type="checkbox" id="chap12">
+      </div>
+      <!-- Résumé du Chapitre 12 -->
+      <div class="summary">
+        <h3>Chapitre 12 : Equations différentielles</h3>
+        <p><strong>Le principe :</strong> Les équations différentielles sont des équations qui relient une fonction à ses dérivées. Elles sont utilisées pour modéliser des phénomènes dynamiques.</p>
+        <p><strong>L'objectif :</strong> Résoudre des équations différentielles et comprendre leur application dans des modèles comme la population, les circuits électriques, ou la diffusion de chaleur.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Une équation différentielle de la forme \( \frac{dy}{dx} = f(x, y) \) est une équation où \( y \) dépend de \( x \) et de ses dérivées.</li>
+            <li>Les équations différentielles linéaires du type \( \frac{dy}{dx} + p(x)y = q(x) \) peuvent être résolues en utilisant le facteur d'intégration \( \mu(x) = e^{\int p(x) \, dx} \).</li>
+            <li>Une solution particulière peut être trouvée à l'aide de la méthode des coefficients indéterminés pour des équations du type \( y'' + ay' + by = 0 \).</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1FwLiGHfOpdrPELwMgiAlRA8LB2vgJyPV/preview" target="_blank">Tspé Chapitre 13 : Somme de variables aléatoires</a></span>
+        <input type="checkbox" id="chap13">
+      </div>
+      <!-- Résumé du Chapitre 13 -->
+      <div class="summary">
+        <h3>Chapitre 13 : Somme de variables aléatoires</h3>
+        <p><strong>Le principe :</strong> Ce chapitre traite de la somme de variables aléatoires indépendantes, essentielle pour comprendre la loi de la somme de ces variables et ses applications pratiques.</p>
+        <p><strong>L'objectif :</strong> Apprendre à calculer la somme de variables aléatoires et en déduire la loi résultante (par exemple, la loi normale).</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Si \( X \) et \( Y \) sont des variables aléatoires indépendantes, alors la somme \( Z = X + Y \) a une espérance \( \mathbb{E}(Z) = \mathbb{E}(X) + \mathbb{E}(Y) \) et une variance \( \text{Var}(Z) = \text{Var}(X) + \text{Var}(Y) \).</li>
+            <li>La distribution de \( Z \) peut être trouvée par convolution des distributions de \( X \) et \( Y \), ce qui donne la loi de probabilité de \( Z \).</li>
+            <li>Par exemple, pour deux variables aléatoires suivant une loi normale, \( X \sim \mathcal{N}(\mu_X, \sigma_X^2) \) et \( Y \sim \mathcal{N}(\mu_Y, \sigma_Y^2) \), la somme \( Z = X + Y \) suit une loi normale \( \mathcal{N}(\mu_X + \mu_Y, \sigma_X^2 + \sigma_Y^2) \).</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="pearl">
+        <span><a href="https://drive.google.com/file/d/1qdFO37DKw9oWp4NaFToHgvD5MFrCYvaE/preview" target="_blank">Tspé Chapitre 14 : Trigonométrie</a></span>
+        <input type="checkbox" id="chap14">
+      </div>
+      <!-- Résumé du Chapitre 14 -->
+      <div class="summary">
+        <h3>Chapitre 14 : Trigonométrie</h3>
+        <p><strong>Le principe :</strong> La trigonométrie est l’étude des relations entre les angles et les côtés des triangles. Elle permet d’aborder les propriétés des cercles et des fonctions trigonométriques.</p>
+        <p><strong>L'objectif :</strong> Étudier les fonctions trigonométriques et leurs propriétés, en particulier dans un cercle trigonométrique, et résoudre des équations trigonométriques.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>L'identité trigonométrique fondamentale est \( \sin^2(\theta) + \cos^2(\theta) = 1 \), utilisée pour simplifier des expressions trigonométriques.</li>
+            <li>Les fonctions trigonométriques comme \( \sin(\theta) \), \( \cos(\theta) \), et \( \tan(\theta) \) sont périodiques et peuvent être définies dans un cercle trigonométrique.</li>
+            <li>La formule de l'addition des angles : 
+              \[
+              \sin(A + B) = \sin(A)\cos(B) + \cos(A)\sin(B), \quad \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
+              \]
+            </li>
+            <li>Les relations dans un triangle rectangle : si \( \theta \) est un angle dans un triangle rectangle, alors \( \sin(\theta) = \frac{\text{côté opposé}}{\text{hypoténuse}} \), \( \cos(\theta) = \frac{\text{côté adjacent}}{\text{hypoténuse}} \), et \( \tan(\theta) = \frac{\text{côté opposé}}{\text{côté adjacent}} \).</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="pearl">
+        <span><a href="file:///C:/Users/alain/OneDrive/Documents/Cours%20Tale%20maths%20spe/Tspe%20Chapitre%2015%20Integrales.pdf" target="_blank">Tspé Chapitre 15 : Intégrales</a></span>
+        <input type="checkbox" id="chap15">
+      </div>
+      <!-- Résumé du Chapitre 15 -->
+      <div class="summary">
+        <h3>Chapitre 15 : Intégrales</h3>
+        <p><strong>Le principe :</strong> L'intégrale permet de calculer l'aire sous une courbe, ou de déterminer des quantités comme des volumes, des distances ou des probabilités.</p>
+        <p><strong>L'objectif :</strong> Apprendre à utiliser l'intégrale pour résoudre des problèmes de géométrie et de physique, et maîtriser les méthodes de calcul d'intégrales.</p>
+        <p><strong>Propriétés importantes :</strong>
+          <ul>
+            <li>Le théorème fondamental du calcul intégral relie la dérivation et l’intégration, en affirmant que si \( F \) est une primitive de \( f \), alors
+              \[
+              \int_a^b f(x) \, dx = F(b) - F(a)
+              \]
+            </li>
+            <li>Les techniques d’intégration incluent la méthode par substitution, comme pour l'intégrale \( \int \frac{1}{x} \, dx = \ln|x| + C \), et l'intégration par parties, avec la formule :
+              \[
+              \int u \, dv = uv - \int v \, du
+              \]
+            </li>
+            <li>Les intégrales peuvent aussi être utilisées pour calculer des volumes de solides de révolution, comme dans la méthode des disques :
+              \[
+              V = \pi \int_a^b [f(x)]^2 \, dx
+              \]
+            </li>
+          </ul>
+        </p>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
